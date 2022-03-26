@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+nav {
+
+    background: rgba(0,0,0, 0.3);
+    width: max-content;
+    display: flex;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(15px);
+
+    a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background: transparent;
+        color: $color-light;
+        display: flex;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        padding: 0.9rem;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &.active {
+            background: $color-bg;
+            color: $color-white;
+        } 
+    }
+}

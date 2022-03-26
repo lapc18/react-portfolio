@@ -3,6 +3,6 @@ import './projects.scss'
 
 export const Projects = () => {
   return (
-    <div>Projects</div>
+    <section id='projects'>Projects</section>
   )
 }

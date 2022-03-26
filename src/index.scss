@@ -8,7 +8,8 @@
   outline: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;  
+  text-decoration: none;
+  position: relative;
 }
 
 
@@ -36,6 +37,7 @@ h1 {
 }
 
 section {
+  height: 100vh;
   margin-top: 8rem;
 
   h2, h5 {

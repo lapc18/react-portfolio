@@ -3,6 +3,6 @@ import './my-services.scss'
 
 export const MyServices = () => {
   return (
-    <div>MyServices</div>
+    <section id='services'>MyServices</section>
   )
 }

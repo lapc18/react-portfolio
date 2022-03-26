@@ -5,7 +5,7 @@ import ME from '../../assets/me.jpg'
 
 export const Header = () => {
   return (
-    <header>
+    <header id='home'>
       <div className="container container__header">
         <h5>Welcome!</h5>
         <h1>This is Adolfo</h1>
