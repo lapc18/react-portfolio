@@ -1,12 +1,14 @@
-import './App.css';
-import Experience from './components/experience';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
 
 
 function App() {
   return (
-    <div className="App">
-      <Experience />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
