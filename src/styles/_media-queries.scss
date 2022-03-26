@@ -1,0 +1,20 @@
+@import "./variables";
+
+@media (max-width: $md) {
+  .container {
+    width: $container-width-md;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: $sm) {
+  .container {
+    width: $container-width-sm;
+  }
+
+  section {
+    margin-top: 2rem;
+  }
+}
