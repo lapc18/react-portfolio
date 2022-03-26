@@ -83,15 +83,15 @@ img {
   border: 1px solid $color-primary;
   transition: $ease-transition;
 
+  &.primary {
+    color: $color-bg;
+    background: $color-primary;
+  }
+
   &:hover {
     border-color: transparent;
     color: $color-bg;
     background: $color-white;
-  }
-
-  .primary {
-    color: $color-bg;
-    background: $color-primary;
   }
 
 }

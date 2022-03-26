@@ -1,0 +1,108 @@
+@import "../../styles/variables";
+
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.container {
+  &__header {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    .actions {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      position: absolute;
+      left: 3rem;
+      bottom: 3rem;
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 2rem;
+        background: $color-primary;
+      }
+    }
+
+    .scroll__down {
+      display: flex;
+      gap: 0.8rem;
+      position: absolute;
+      right: 3rem;
+      bottom: 3rem;
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 2rem;
+        background: $color-primary;
+      }
+
+      h4 {
+        transform: rotate(90deg) translate(-80px, -55px);
+        color: $color-primary;
+      }
+    }
+
+    .me {
+      width: 17rem;
+      height: 25rem;
+      position: absolute;
+      left: calc(50% - 8.5rem);
+      margin-top: 3rem;
+
+      img {
+        border-radius: 10rem 10rem 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  header {
+    height: 100vh;
+  }
+
+  .container {
+    &__header {
+      .socials {
+        left: 0rem;
+        bottom: 2rem;
+      }
+
+      .scroll__down {
+        right: 0rem;
+        bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  header {
+    height: 85vh;
+  }
+
+  .container {
+    &__header {
+      .socials {
+        display: none;
+      }
+
+      .scroll__down {
+        display: none;
+      }
+    }
+  }
+}
