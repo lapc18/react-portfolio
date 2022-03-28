@@ -32,7 +32,6 @@
     }
 
     .about__content {
-
       .about__cards {
         display: grid;
         grid-template-columns: repeat(3, 11rem);
@@ -45,6 +44,26 @@
 
       a {
         margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  .container {
+    &__about {
+      grid-template-columns: 1fr;
+      gap: 0;
+
+      .about__me {
+        margin: 2rem auto 4rem;
+      }
+
+      .about__content {
+        .about__cards {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
       }
     }
   }
@@ -64,27 +83,9 @@
       .about__content {
         .about__cards {
           justify-content: center;
+          grid-template-columns: repeat(3, 11rem);
         }
       }
     }
   }
 }
-@media (min-width: $sm) {
-    .container {
-      &__about {
-        grid-template-columns: 1fr;
-        gap: 0;
-  
-        .about__me {
-          margin: 2rem auto 4rem;
-        }
-  
-        .about__content {
-          .about__cards {
-            grid-template-columns: 1fr;
-            gap: 0;
-            }
-        }
-      }
-    }
-  }
