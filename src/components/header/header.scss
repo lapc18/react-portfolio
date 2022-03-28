@@ -89,7 +89,7 @@ header {
   }
 }
 
-@media (max-width: $sm) {
+@media (min-width: $sm) {
   header {
     height: 85vh;
   }

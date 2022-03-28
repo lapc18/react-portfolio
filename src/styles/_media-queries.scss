@@ -1,6 +1,6 @@
 @import "./variables";
 
-@media (max-width: $md) {
+@media (min-width: $md) {
   .container {
     width: $container-width-md;
   }
@@ -9,7 +9,7 @@
     margin-top: 6rem;
   }
 }
-@media (max-width: $sm) {
+@media (min-width: $sm) {
   .container {
     width: $container-width-sm;
   }
