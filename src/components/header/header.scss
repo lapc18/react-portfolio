@@ -91,7 +91,7 @@ header {
 
 @media (min-width: $sm) {
   header {
-    height: 85vh;
+    min-height: 100vh;
   }
 
   .container {
@@ -102,6 +102,60 @@ header {
 
       .scroll__down {
         display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  header {
+    min-height: 100vh;
+  }
+
+  .container {
+    &__header {
+      .socials {
+        display: flex;
+      }
+
+      .scroll__down {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  header {
+    min-height: 100vh;
+  }
+
+  .container {
+    &__header {
+      .socials {
+        display: flex;
+      }
+
+      .scroll__down {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  header {
+    min-height: 100vh;
+  }
+
+  .container {
+    &__header {
+      .socials {
+        display: flex;
+      }
+
+      .scroll__down {
+        display: flex;
       }
     }
   }
