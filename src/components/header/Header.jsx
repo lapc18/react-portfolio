@@ -2,6 +2,7 @@ import React from 'react'
 import './header.scss'
 import { BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import ME from '../../assets/me.jpg'
+import CV from '../../assets/luispimentelcv.pdf'
 
 export const Header = () => {
   return (
@@ -11,7 +12,7 @@ export const Header = () => {
         <h1>This is Adolfo</h1>
         <h5 className='text-light'>Software Developer</h5>
         <div className="actions">
-          <a className='btn' href="#">Download CV</a>
+          <a className='btn' download href={CV}>Download CV</a>
           <a className='btn primary' href="#contact">Let's talk</a>
         </div>
         <div className="me">

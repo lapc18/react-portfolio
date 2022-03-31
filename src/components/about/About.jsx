@@ -8,7 +8,7 @@ import { VscFolder } from 'react-icons/vsc';
 
 
 const content = {
-  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusantium tempore dolorem quis ratione quam consectetur non. Illo modi laboriosam aperiam culpa. Nemo minus quaerat consectetur quo mollitia consequuntur accusantium?',
+  description: 'Experienced Software Developer with a demonstrated history of working in the banking and business industries. Skilled in Public Speaking, Flutter, Java, DotNetCore, JavaScript and Typescript. Strong engineering professional graduated from ITLA and some certifications focused on development skills of ReactJS, Angular2+, Java Spring Boot, Flutter, C# DotNetCore and others.',
   items: [
     {
       title: 'Experience',
