@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.container {
+  &__services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: $sm) {
+  .container {
+    &__services {
+        display: grid;
+        grid-template-columns: auto;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .container {
+    &__services {
+        display: grid;
+        grid-template-columns: auto;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .container {
+    &__services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+}

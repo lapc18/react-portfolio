@@ -17,10 +17,14 @@ export const Home = () => {
         <Nav />
         <About />
         <Experience />
-        {/* <MyServices />
+        <MyServices />
+        
+        
+        {/* 
         <Projects />
         <Contacts />
-        <Footer /> */}
+        <Footer /> 
+        */}
     </>
   )
 }
