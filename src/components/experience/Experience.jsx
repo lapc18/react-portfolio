@@ -14,7 +14,7 @@ export const Experience = () => {
       <div className="container container__experience">
         {
           EXPERIENCE.map(x => (
-            <ListGroup title={x.title} icon={x.icon} items={x.items} />
+            <ListGroup key={x.id} {...x} />
           ))
         }
       </div>

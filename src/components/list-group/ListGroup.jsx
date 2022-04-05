@@ -12,7 +12,7 @@ export const ListGroup = (props) => {
       <div className='list-group__container'>
         {
           props.items.map(x => (
-            <div className='list-group__container__content'>
+            <div className='list-group__container__content' key={`${x.id}-${x.name}-${x.category}`}>
               <MdVerified />
               <div>
                 <h2>{x.name}</h2>

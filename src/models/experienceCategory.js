@@ -1,5 +1,6 @@
 import { FaCode } from 'react-icons/fa';
 import { AiOutlineCode } from 'react-icons/ai';
+import { nanoid } from '@reduxjs/toolkit';
 
 
 const category = {
@@ -11,6 +12,7 @@ const category = {
 
 export const EXPERIENCE_CAT = [
     {
+      id: nanoid(),
       title: 'Front-End Development',
       icon: <FaCode />,
       items: [
@@ -50,6 +52,7 @@ export const EXPERIENCE_CAT = [
       ]
     },
     {
+      id: nanoid(),
       title: 'Back-End Development',
       icon: <AiOutlineCode />,
       items: [
