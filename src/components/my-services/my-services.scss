@@ -12,6 +12,7 @@
 
   .service-block {
     min-width: 30rem;
+    min-height: 13rem;
     border-bottom: 5px solid $color-primary-variant;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -41,6 +42,7 @@
     &:hover {
       transition: $ease-transition;
       border-bottom: 5px solid $color-primary;
+      min-height: 13.5rem;
 
       svg {
         transition: $ease-transition;
