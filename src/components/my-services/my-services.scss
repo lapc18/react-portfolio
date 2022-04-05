@@ -2,17 +2,69 @@
 
 .container {
   &__services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+      margin: 0.5rem;
+    }
+  }
+
+  .service-block {
+    min-width: 30rem;
+    border-bottom: 5px solid $color-primary-variant;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    transition: $ease-transition;
+
+    &__icon {
+      svg {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $color-primary;
+      }
+    }
+
+    &__header {
+      h3 {
+        color: $color-primary;
+      }
+    }
+
+    &__content {
+      p {
+        color: $color-light;
+      }
+    }
+
+    &:hover {
+      transition: $ease-transition;
+      border-bottom: 5px solid $color-primary;
+
+      svg {
+        transition: $ease-transition;
+        font-size: 4rem;
+      }
+
+      h3 {
+        color: $color-light;
+        transition: $ease-transition;
+      }
+
+      p {
+        color: $color-white;
+        transition: $ease-transition;
+      }
+    }
   }
 }
-
 
 @media (min-width: $sm) {
   .container {
     &__services {
-        display: grid;
-        grid-template-columns: auto;
+      display: grid;
+      grid-template-columns: auto;
     }
   }
 }
@@ -20,8 +72,8 @@
 @media (min-width: $md) {
   .container {
     &__services {
-        display: grid;
-        grid-template-columns: auto;
+      display: grid;
+      grid-template-columns: auto;
     }
   }
 }
@@ -29,8 +81,8 @@
 @media (min-width: $lg) {
   .container {
     &__services {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
