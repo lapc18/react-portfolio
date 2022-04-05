@@ -68,6 +68,11 @@
       display: grid;
       grid-template-columns: auto;
     }
+
+    .service-block {
+      min-width: auto;
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -75,7 +80,12 @@
   .container {
     &__services {
       display: grid;
-      grid-template-columns: auto;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .service-block {
+      min-width: auto;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -85,6 +95,11 @@
     &__services {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    .service-block {
+      min-width: auto;
+      margin-bottom: 1rem;
     }
   }
 }
