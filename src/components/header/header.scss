@@ -11,6 +11,11 @@ header {
     position: relative;
     text-align: center;
     height: 100%;
+
+    h1 {
+      color: $color-primary;
+    }
+
     .actions {
       margin-top: 2.5rem;
       display: flex;
@@ -56,14 +61,14 @@ header {
     }
 
     .me {
-      width: 17rem;
+      width: 22rem;
       height: 25rem;
       position: absolute;
-      left: calc(50% - 8.5rem);
+      left: calc(50% - 10rem);
       margin-top: 3rem;
 
       img {
-        border-radius: 10rem 10rem 0 0;
+        border-radius: 10rem 0 10rem 0;
       }
     }
   }
@@ -72,6 +77,7 @@ header {
 @media (max-width: $md) {
   header {
     height: 100vh;
+    padding-top: 5rem;
   }
 
   .container {
@@ -85,6 +91,12 @@ header {
         right: 0rem;
         bottom: 2rem;
       }
+
+      .me {
+        width: 22rem;
+        height: 25rem;
+        left: calc(50% - 11rem);
+      }
     }
   }
 }
@@ -92,6 +104,7 @@ header {
 @media (min-width: $sm) {
   header {
     min-height: 100vh;
+    padding-top: 3rem;
   }
 
   .container {
@@ -102,6 +115,12 @@ header {
 
       .scroll__down {
         display: none;
+      }
+
+      .me {
+        width: 22rem;
+        height: 25rem;
+        left: calc(50% - 11rem);
       }
     }
   }
