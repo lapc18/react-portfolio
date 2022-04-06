@@ -74,33 +74,6 @@ header {
   }
 }
 
-@media (max-width: $md) {
-  header {
-    height: 100vh;
-    padding-top: 5rem;
-  }
-
-  .container {
-    &__header {
-      .socials {
-        left: 0rem;
-        bottom: 2rem;
-      }
-
-      .scroll__down {
-        right: 0rem;
-        bottom: 2rem;
-      }
-
-      .me {
-        width: 22rem;
-        height: 25rem;
-        left: calc(50% - 11rem);
-      }
-    }
-  }
-}
-
 @media (min-width: $sm) {
   header {
     min-height: 100vh;
@@ -126,19 +99,30 @@ header {
   }
 }
 
-@media (min-width: $md) {
+@media (max-width: $md) {
   header {
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 5rem;
   }
 
   .container {
     &__header {
       .socials {
+        left: 0rem;
+        bottom: 2rem;
         display: flex;
       }
 
       .scroll__down {
+        right: 0rem;
+        bottom: 2rem;
         display: flex;
+      }
+
+      .me {
+        width: 22rem;
+        height: 25rem;
+        left: calc(50% - 11rem);
       }
     }
   }
@@ -147,6 +131,7 @@ header {
 @media (min-width: $lg) {
   header {
     min-height: 100vh;
+    padding-top: 7rem;
   }
 
   .container {
