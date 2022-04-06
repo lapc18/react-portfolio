@@ -19,11 +19,11 @@ export const Home = () => {
         <Experience />
         <MyServices />
         
+        <Footer /> 
         
         {/* 
         <Projects />
         <Contacts />
-        <Footer /> 
         */}
     </>
   )

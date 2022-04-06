@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+footer {
+  min-height: 5rem;
+  background: $color-primary;
+  padding: 1rem;
+
+  a {
+    color: $color-white;
+    &:hover {
+      color: $color-bg;
+      font-size: 1.5rem;
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+
+    &::before {
+      content: "";
+      width: 2rem;
+      height: 1px;
+      background: $color-bg;
+    }
+  }
+
+  .greets {
+      text-align: center;
+  }
+}
