@@ -1,5 +1,9 @@
 @import "../../styles/variables";
 
+#about {
+  min-height: auto;
+}
+
 .container {
   &__about {
     display: grid;

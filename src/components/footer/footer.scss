@@ -1,9 +1,11 @@
 @import "../../styles/variables";
 
 footer {
-  min-height: 5rem;
+  min-height: 3rem;
   background: $color-primary;
   padding: 1rem;
+  display: flex;
+  // grid-template-columns: 1fr 1fr;
 
   a {
     color: $color-white;
@@ -28,6 +30,10 @@ footer {
   }
 
   .greets {
-      text-align: center;
+    width: 100%;
+    text-align: center;
+    h3 {
+      transform: translate(-4rem, 1rem)
+    }
   }
 }
