@@ -6,8 +6,8 @@ import Nav from '../../components/nav'
 import About from '../../components/about'
 import Experience from '../../components/experience'
 import MyServices from '../../components/my-services'
-import Projects from '../../components/projects'
-import Contacts from '../../components/contacts'
+// import Projects from '../../components/projects'
+// import Contacts from '../../components/contacts'
 import Footer from '../../components/footer'
 
 export const Home = () => {
