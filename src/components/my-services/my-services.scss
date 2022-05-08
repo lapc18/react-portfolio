@@ -1,5 +1,9 @@
 @import "../../styles/variables";
 
+#services {
+  min-height: auto;
+}
+
 .container {
   &__services {
     display: grid;

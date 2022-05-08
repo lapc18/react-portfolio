@@ -7,7 +7,7 @@ import About from '../../components/about'
 import Experience from '../../components/experience'
 import MyServices from '../../components/my-services'
 // import Projects from '../../components/projects'
-// import Contacts from '../../components/contacts'
+import Contacts from '../../components/contacts'
 import Footer from '../../components/footer'
 
 export const Home = () => {
@@ -19,11 +19,11 @@ export const Home = () => {
         <Experience />
         <MyServices />
         
+        <Contacts />
         <Footer /> 
         
         {/* 
         <Projects />
-        <Contacts />
         */}
     </>
   )

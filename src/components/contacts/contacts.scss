@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+#contact {
+  height: auto;
+  min-height: 40vh;
+}
+
+.container {
+  &__contact {
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+
+      .article-card {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  
+}
+
+@media (min-width: $md) {
+  
+}
+
+@media (min-width: $lg) {
+  
+}
