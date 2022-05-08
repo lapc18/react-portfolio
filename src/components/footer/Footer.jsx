@@ -5,6 +5,15 @@ import { BsGithub, BsInstagram, BsWhatsapp } from "react-icons/bs";
 export const Footer = () => {
   return (
     <footer>
+      <h2>Luis Adolfo Pimentel</h2>
+      <div className="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#experience">Experience</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contacts</a>
+      </div>
+
       <div className="socials">
         <a
           href="https://github.com/lapc18"

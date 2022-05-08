@@ -1,39 +1,58 @@
 @import "../../styles/variables";
 
 footer {
-  min-height: 3rem;
+  min-height: 20rem;
   background: $color-primary;
   padding: 1rem;
   display: flex;
-  // grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
 
-  a {
-    color: $color-white;
-    &:hover {
+  h2 {
+    color: $color-bg;
+    padding-bottom: 1rem;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 1rem;
+
+    a {
       color: $color-bg;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+
+      &:hover {
+        font-size: 1.5rem;
+        color: $color-bg-variant;
+      }
     }
   }
+
+  
 
   .socials {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 0.8rem;
+    padding-bottom: 1rem;
 
-    &::before {
-      content: "";
-      width: 2rem;
-      height: 1px;
-      background: $color-bg;
+    a {
+      color: $color-bg;
+      font-size: 1.5rem;
+
+      &:hover {
+        font-size: 1.6rem;
+        color: $color-bg-variant;
+      }
     }
+    
   }
 
   .greets {
-    width: 100%;
+    color: $color-bg;
     text-align: center;
-    h3 {
-      transform: translate(-4rem, 1rem)
-    }
+   
   }
 }
